@@ -1,0 +1,12 @@
+C:\Users\victo\source\repos\Crud cliente\Crud cliente\bin\Debug\Crud cliente.exe.config
+C:\Users\victo\source\repos\Crud cliente\Crud cliente\bin\Debug\Crud cliente.exe
+C:\Users\victo\source\repos\Crud cliente\Crud cliente\bin\Debug\Crud cliente.pdb
+C:\Users\victo\source\repos\Crud cliente\Crud cliente\obj\Debug\Crud cliente.csproj.AssemblyReference.cache
+C:\Users\victo\source\repos\Crud cliente\Crud cliente\obj\Debug\Crud_cliente.Properties.Resources.resources
+C:\Users\victo\source\repos\Crud cliente\Crud cliente\obj\Debug\Crud cliente.csproj.GenerateResource.cache
+C:\Users\victo\source\repos\Crud cliente\Crud cliente\obj\Debug\Crud cliente.csproj.CoreCompileInputs.cache
+C:\Users\victo\source\repos\Crud cliente\Crud cliente\obj\Debug\Crud cliente.exe
+C:\Users\victo\source\repos\Crud cliente\Crud cliente\obj\Debug\Crud cliente.pdb
+C:\Users\victo\source\repos\Crud cliente\Crud cliente\obj\Debug\Crud_cliente.CRUDSQL.resources
+C:\Users\victo\source\repos\Crud cliente\Crud cliente\obj\Debug\Crud_cliente.FormLogin.resources
+C:\Users\victo\source\repos\Crud cliente\Crud cliente\obj\Debug\Crud_cliente.CadastroLogin.resources
