@@ -31,7 +31,7 @@ namespace Crud_cliente.Class_Rotinas_Crud
 
                         dbcomand.CommandTimeout = 60;
 
-                        var deletar = "DELETE FROM CLIENTE WHERE ID=@ID";
+                        var deletar = "DELETE FROM CLIENTES WHERE ID=@ID";
 
 
                         dbcomand.CommandText = deletar;

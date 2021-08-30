@@ -31,7 +31,7 @@ namespace Crud_cliente
                     {
                         dbCommand.CommandTimeout = 60;
 
-                        dbCommand.CommandText = "SELECT * FROM CLIENTE WHERE ID = @ID";
+                        dbCommand.CommandText = "SELECT * FROM CLIENTES WHERE ID = @ID";
 
                         dbCommand.Parameters.AddWithValue("@ID", Id);
 

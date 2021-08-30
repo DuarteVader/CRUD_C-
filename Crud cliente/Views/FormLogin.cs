@@ -74,5 +74,15 @@ namespace Crud_cliente
             login.Show();
 
         }
+
+        private void txtUsuario_Validating(object sender, CancelEventArgs e)
+        {
+            txtSenha.Select();
+        }
+
+        private void txtSenha_Validating(object sender, CancelEventArgs e)
+        {
+            btnEntrar.Select();
+        }
     }
 }

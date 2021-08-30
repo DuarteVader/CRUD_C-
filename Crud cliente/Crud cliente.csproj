@@ -69,7 +69,7 @@
     </Compile>
     <Compile Include="Class Crud\CrudDelete.cs" />
     <Compile Include="Class Crud\CrudUpdate.cs" />
-    <Compile Include="CrudProdutos.cs" />
+    <Compile Include="Models\CrudProdutos.cs" />
     <Compile Include="Class Crud\CrudSelect.cs" />
     <Compile Include="Views\FormLogin.cs">
       <SubType>Form</SubType>

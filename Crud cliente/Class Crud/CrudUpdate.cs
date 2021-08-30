@@ -32,7 +32,7 @@ namespace Crud_cliente.Class_Crud
 
                         dbcomand.CommandTimeout = 60;
 
-                        var conexao = "UPDATE CLIENTE SET NOME = @NOME, ENDERECO = @ENDERECO, PRODUTO = @PRODUTO WHERE ID=@ID";
+                        var conexao = "UPDATE CLIENTES SET NOME = @NOME, ENDERECO = @ENDERECO, PRODUTO = @PRODUTO WHERE ID=@ID";
 
                         dbcomand.CommandText = conexao;
 

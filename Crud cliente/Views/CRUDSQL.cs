@@ -57,7 +57,7 @@ namespace Crud_cliente
                     cnn.Open();
                     using (SqlCommand dbcomand = cnn.CreateCommand())
                     {
-                        var insert = "INSERT INTO Cliente (Nome, ENDERECO, Produto) VALUES (@NOME, @ENDERECO, @PRODUTO)";
+                        var insert = "INSERT INTO Clientes (Nome, ENDERECO, Produto) VALUES (@NOME, @ENDERECO, @PRODUTO)";
 
                         dbcomand.CommandText = insert;
 
@@ -96,23 +96,35 @@ namespace Crud_cliente
 
         private void textBox1_Validating(object sender, CancelEventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtId.Text) || txtId.Text != "Pesquisa")
+            try
             {
-                List<CrudProdutos> produtos = new CrudSelect().BuscarIDProdutos(Convert.ToInt32(txtId.Text));
-
-                if (produtos != null)
+                if (!string.IsNullOrEmpty(txtId.Text) || txtId.Text != "Pesquisa")
                 {
-                    foreach (var item in produtos)
+                    List<CrudProdutos> produtos = new CrudSelect().BuscarIDProdutos(Convert.ToInt32(txtId.Text));
+
+                    if (produtos != null)
                     {
+                        foreach (var item in produtos)
+                        {
 
-                        txtBoxNome.Text = item.Nome;
-                        txtEnde.Text = item.Endereco;
-                        cmbProduto.Text = item.Produto;
+                            txtBoxNome.Text = item.Nome;
+                            txtEnde.Text = item.Endereco;
+                            cmbProduto.Text = item.Produto;
 
+                        }
                     }
-                }
 
+                }
             }
+            catch(Exception x)
+            {
+                MessageBox.Show(x.Message);
+                txtBoxNome.Clear();
+                txtEnde.Clear();
+                txtId.Clear();
+                txtId.Text = "Pesquisar";
+            }
+            
 
         }
 
@@ -163,6 +175,7 @@ namespace Crud_cliente
             txtEnde.Clear();
             cmbProduto.ResetText();
             txtId.Clear();
+            txtId.Enabled = false;
             txtId.Text = "Pesquisar";
         }
 

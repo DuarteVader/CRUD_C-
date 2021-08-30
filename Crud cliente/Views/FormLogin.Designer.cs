@@ -70,6 +70,7 @@ namespace Crud_cliente
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(172, 26);
             this.txtUsuario.TabIndex = 2;
+            this.txtUsuario.Validating += new System.ComponentModel.CancelEventHandler(this.txtUsuario_Validating);
             // 
             // label2
             // 
@@ -89,6 +90,7 @@ namespace Crud_cliente
             this.txtSenha.Size = new System.Drawing.Size(103, 26);
             this.txtSenha.TabIndex = 2;
             this.txtSenha.UseSystemPasswordChar = true;
+            this.txtSenha.Validating += new System.ComponentModel.CancelEventHandler(this.txtSenha_Validating);
             // 
             // btnSair
             // 
